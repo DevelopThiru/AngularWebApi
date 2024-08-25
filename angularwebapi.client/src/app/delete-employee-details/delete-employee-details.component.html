@@ -1,0 +1,41 @@
+<form class="form" (ngSubmit)="onSubmitForm()" [formGroup]="deleteEmployeeForm">
+
+  <div class="row">
+    <label for="employeeName">Employee Name</label>
+    <input id="employeeName" type="text" formControlName="employeeName" />
+    <div *ngIf="deleteEmployeeForm.get('employeeName')?.touched && deleteEmployeeForm.get('employeeName')?.errors?.['required']">
+      Please Enter Employee Name
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeage">Employee Age</label>
+    <input id="employeeage" type="text" formControlName="employeeage" />
+    <div *ngIf="deleteEmployeeForm.get('employeeage')?.touched && deleteEmployeeForm.get('employeeage')?.errors?.['required']">
+      Please Enter Employee Age
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeEmail">Employee Email</label>
+    <input id="employeeEmail" type="text" formControlName="employeeEmail" />
+    <div *ngIf="deleteEmployeeForm.get('employeeEmail')?.touched && deleteEmployeeForm.get('employeeEmail')?.errors?.['required']">
+      Please Enter Employee Email
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeNumber">Employee Number</label>
+    <input id="employeeNumber" type="text" formControlName="employeeNumber" />
+    <div *ngIf="deleteEmployeeForm.get('employeeNumber')?.touched && deleteEmployeeForm.get('employeeNumber')?.errors?.['required']">
+      Please Enter Employee Number
+    </div>
+  </div>
+  <br />
+  <br />
+  <button type="submit">Delete</button>
+
+</form>

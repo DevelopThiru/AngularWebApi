@@ -1,0 +1,34 @@
+/* Styles for the table */
+.deatils-table {
+  width: 100%;
+  border-collapse: collapse; /* Ensure cells share borders */
+  margin-top: 20px; /* Add margin for spacing */
+  font-family: Arial, sans-serif; /* Optional: Set a preferred font */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+}
+
+  /* Styles for table header */
+  .deatils-table th {
+    background-color: #f2f2f2; /* Light gray background */
+    color: #333; /* Dark text color */
+    padding: 10px; /* Padding inside each header cell */
+    text-align: left; /* Align text to the left */
+    border-bottom: 2px solid #ddd; /* Bottom border for separation */
+  }
+
+  /* Styles for table rows */
+  .deatils-table td {
+    padding: 10px; /* Padding inside each cell */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Bottom border for separation */
+  }
+
+  /* Alternate row background color for better readability */
+  .deatils-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Lighter gray background */
+  }
+
+  /* Hover effect for rows */
+  .deatils-table tbody tr:hover {
+    background-color: #e9ecef; /* Light blue background on hover */
+  }

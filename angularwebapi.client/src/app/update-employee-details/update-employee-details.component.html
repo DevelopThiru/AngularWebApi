@@ -1,0 +1,41 @@
+<form class="form" (ngSubmit)="onSubmitForm()" [formGroup]="updateEmployeeForm">
+
+  <div class="row">
+    <label for="employeeName">Employee Name</label>
+    <input id="employeeName" type="text" formControlName="employeeName" />
+    <div *ngIf="updateEmployeeForm.get('employeeName')?.touched && updateEmployeeForm.get('employeeName')?.errors?.['required']">
+      Please Enter Employee Name
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeage">Employee Age</label>
+    <input id="employeeage" type="text" formControlName="employeeage" />
+    <div *ngIf="updateEmployeeForm.get('employeeage')?.touched && updateEmployeeForm.get('employeeage')?.errors?.['required']">
+      Please Enter Employee Age
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeEmail">Employee Email</label>
+    <input id="employeeEmail" type="text" formControlName="employeeEmail" />
+    <div *ngIf="updateEmployeeForm.get('employeeEmail')?.touched && updateEmployeeForm.get('employeeEmail')?.errors?.['required']">
+      Please Enter Employee Email
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="row">
+    <label for="employeeNumber">Employee Number</label>
+    <input id="employeeNumber" type="text" formControlName="employeeNumber" />
+    <div *ngIf="updateEmployeeForm.get('employeeNumber')?.touched && updateEmployeeForm.get('employeeNumber')?.errors?.['required']">
+      Please Enter Employee Number
+    </div>
+  </div>
+  <br />
+  <br />
+  <button type="submit">Sumit</button>
+
+</form>
